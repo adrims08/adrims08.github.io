@@ -1,0 +1,231 @@
+/* Importa las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* Permite deslizar la página con los links del menú */
+    scroll-behavior: smooth;
+}
+
+/* MENÚ */
+.contenedor-header{
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'IBM Plex Mono';
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #1cb698;
+}
+
+.nav-responsive{
+    background-color: #1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* PRINCIPAL */
+.principal{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    /*Foto de fondo*/    
+    url(img/fondo.png);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.principal .contenedor-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.principal .contenedor-banner img{
+    margin-top: 40px;
+    border: 10px solid #1cb698;
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.principal .contenedor-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'IBM Plex Mono';
+}
+
+.principal .contenedor-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.principal .contenedor-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.principal .contenedor-banner .redes a:hover{
+    background-color: #1cb698;
+}
+
+/* INFORMACIÓN PERSONAL */
+.informacion{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.informacion .contenedor-info{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.informacion h2{
+    font-size: 48px;
+    font-family: 'IBM Plex Mono';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.informacion ul{
+    list-style: none;
+}
+
+.informacion ul li{
+    margin: 12px 0;
+}
+
+.informacion ul li strong{
+    display: inline-block;
+    color: #1cb698;
+}
+
+.informacion button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.informacion button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.informacion button:hover .overlay{
+    width:100%;
+}
+
+/******************************************/
+
+footer{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .volver{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1cb698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
