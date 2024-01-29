@@ -11,6 +11,11 @@
 html{
     /* Permite deslizar la página con los links del menú */
     scroll-behavior: smooth;
+    background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,1)),
+    /*Foto de fondo*/    
+    url(img/back.jpg);  
+    background-size:cover;
+    background-attachment: fixed;
 }
 
 /* MENÚ */
@@ -68,9 +73,11 @@ html{
 
 /* PRINCIPAL */
 .principal{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,1)),
     /*Foto de fondo*/    
-    url(img/fondo.png);
+    url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -80,7 +87,7 @@ html{
 
 .principal .contenedor-banner{
     padding: 20px;
-    background-color: #1e2326;
+    background-color: rgba(30,35,38,.7);
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -108,6 +115,7 @@ html{
 }
 
 .principal .contenedor-banner .redes a{
+    background-color:#252A2E;
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -127,7 +135,7 @@ html{
 
 /* INFORMACIÓN PERSONAL */
 .informacion{
-    background-color: #1e2326;
+    background-color: rgba(30,35,38,.7);
     color: #fff;
     padding: 50px 20px;
 }
@@ -159,7 +167,7 @@ html{
 
 .informacion button{
     cursor: pointer;
-    background-color: transparent;
+    background-color:#252A2E;
     border: 2px solid #fff;
     width: fit-content;
     display: block;
@@ -196,6 +204,7 @@ html{
 }
 
 .informacion .certificados .card{
+    background-color:#252A2E;
     width: 300px;
     height: 240px;
     border-radius: 9px;
@@ -204,6 +213,8 @@ html{
     margin: 20px;
     text-align: center;
     transition: 0.3s;
+
+    
 }
 
 .informacion .certificados .card:hover{
@@ -230,7 +241,7 @@ html{
 
 /* CONOCIMIENTOS */
 .conocimientos{
-    background-color: #1e2326;
+    background-color: rgba(30,35,38,0.7);
     color: #fff;
     padding: 50px 20px;
 }
@@ -308,7 +319,7 @@ html{
 /* PORTFOLIO */
 
 .portfolio{
-    background-color: #1e2326;
+    background-color: rgba(30,35,38,.7);
     color: #fff;
     padding: 50px 20px;
 }
@@ -332,6 +343,7 @@ html{
 .portfolio .card{
     width: 300px;
     height: 220px;
+    background-color:#252A2E;
     border-radius: 9px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -366,7 +378,7 @@ html{
 /******************************************/
 
 footer{
-    background-color: #1e2326;
+    background-color: rgba(30,35,38,.5);
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
@@ -379,6 +391,7 @@ footer .redes{
 }
 
 footer .redes a{
+    background-color:#252A2E;
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -392,6 +405,9 @@ footer .redes a{
     transition: .3s;
 }
 
+footer .redes a:hover{
+    background-color: #1cb698;
+}
 /* RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
@@ -428,7 +444,5 @@ footer .redes a{
     .conocimientos .fila .col{
         width: fit-content;
     }
-
 }
-
 
