@@ -1,0 +1,350 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--  Fuentes referenciadas - Font-Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <script src="banner.js"></script>
+    <!--  MENÚ ENCABEZADO  -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">&#62;_</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#about_me" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#training" onclick="seleccionar()">TRAINING</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--  PRINCIPAL  -->
+    <section id="about_me" class="about_me">
+        <div class="tabla_p" style="margin-top: 50px">
+            <div class="fila">
+                <div class="col">
+                    <div class="contenedor-banner">
+                        <div class="contenedor-img">
+                            <!--  Foto principal  -->
+                           <img src="img/perfil.jpg" alt=""> 
+                        </div>
+                        <h1>Adriana Morales</h1>
+                        <h2>Computer Systems Engineering | Freelancer</h2>
+                        <div class="redes">
+                            <!--  Redes sociales  -->
+                            <a href="https://www.linkedin.com/in/adripms/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/adrims08" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>            
+                </div>
+                <div class="col">
+                    <div class="personal_information">
+                        <br><br><h2>ABOUT ME</h2>
+                        <p>
+                            <br><br>Hi! My name is <strong>Adriana Patricia Morales Sánchez</strong>, I'm 25 years old and I'm a <strong>Computer Systems Engineer</strong>, focused mainly on the <strong>Networking</strong> area.
+                            <br><br>I have also participated in desktop, mobile and web application development projects, with a penchant for the <strong>C#</strong> programming language.
+                            <br><br>However, I can adapt to different programming languages to develop a variety of applications.
+                            <br><br>I have worked with <strong>Agile, Kanban and SCRUM</strong> methodologies, focusing on results.
+                        </p>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  INFORMACIÓN ACADÉMICA   -->
+    <section id="training" class="training">
+        <div class="contenedor-info">
+            <h2>ACADEMIC TRAINING</h2>
+            <ul>
+                <li>
+                    <strong>(2013 - 2017) IPN - CECyT 1: </strong>
+                    DIGITAL SYSTEMS TECHNICIAN     
+                </li>
+                <li>
+                    <strong>(2018 - 2019) IPN - UPIITA: </strong>
+                    TELEMATIC ENGINEERING (unfinished)    
+                </li>
+                <li>
+                    <strong>(2020 - Present) UVM - San Rafael: </strong>
+                    COMPUTER SYSTEMS ENGINEERING    
+                </li>
+                <li>
+                    <strong>(2021 Aug - Dec) UPC: </strong>
+                    INTERNATIONAL SEMESTER FOR ACADEMIC EXCELLENCE    
+                </li>
+            </ul>
+            <h2>FURTHER TRAINING</h2>
+            <ul>
+                <li>
+                    <strong>(2024 Jan - Apr) CISCO</strong> WINTER INCUBATION PROGRAM
+                    <br>Cisco Customer Experience Academy
+                </li>
+            </ul>
+
+            <h2>CISCO COURSES (with badges)</h2>   
+            <ul>
+                <li>
+                    <strong>CISCO NETACAD:</strong>
+                    <br>CCNAv7: Introduction to Networks
+                    <br>CCNAv7: Switching, Routing, and Wireless Essentials 
+                    <br>CCNAv7: Enterprise Networking, Security, and Automation
+                    <br>Emerging Technologies Workshop - Experimenting with REST APIs using Webex Teams
+                    <br>NDG Linux Essentials
+                </li>
+                <li>
+                    <strong>CISCO SKILLS FOR ALL:</strong>
+                    <br>Networking Basics - MXC
+                    <br>Networking Devices and Initial Configuration - MXC
+                    <br>Network Addressing and Basic Troubleshooting – MXC
+                    <br>Network Support and Security – MXC
+                    <br>Network Technician Career Path Exam - MXC
+                </li>
+            </ul> 
+            <a href="docs/cv_apms.pdf" target="_blank">
+                <button>
+                    Download CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>         
+        </div>
+        <h2><br>DIPLOMAS</h2>
+        <div class="certificados">
+            <div class="card">
+                <img src="img/CCNAv7_1.jpg">
+                <a href="docs/CCNAv7_1.pdf" target="_blank">CCNAv7 Introduction to Networks</a>
+            </div>
+            <div class="card">
+                <img src="img/CCNAv7_2.jpg">
+                <a href="docs/CCNAv7_2.pdf" target="_blank">CCNAv7: Switching, Routing, and Wireless Essentials</a>
+            </div>
+            <div class="card">
+                <img src="img/CCNAv7_3.jpg">
+                <a href="docs/CCNAv7_3.pdf" target="_blank">CCNAv7: Enterprise Networking, Security, and Automation</a>
+            </div>
+            <div class="card">
+                <img src="img/ETW_WEBEX.jpg">
+                <a href="docs/ETW_WEBEX.pdf" target="_blank">Emerging Technologies Workshop - Experimenting with REST APIs using Webex Teams</a>
+            </div>
+            <div class="card">
+                <img src="img/NDG_LE.jpg">
+                <a href="docs/NDG_LE.pdf" target="_blank">NDG Linux Essentials</a>
+            </div>
+            <div class="card">
+                <img src="img/MBQ_HackDef.jpg">
+                <a href="docs/MBQ_HackDef.pdf" target="_blank">MetaBaseQ</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--  CONOCIMIENTOS  -->
+    <section id="skills" class="conocimientos">
+        <div class="contenedor-habilidades">
+            <h2>SKILLS</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Software</h3>
+                        <ul>
+                            <li>
+                                <strong>Office Parcel</strong>
+                                (Word, PowerApps, PowerBI, PowerPoint, Excel)
+                            </li>        
+                            <li>
+                                <strong>Intell</strong>
+                                IJ
+                            </li>        
+                            <li>
+                                <strong>Visual Studio</strong>
+                            </li>        
+                            <li>
+                                <strong>Visual Studio Code</strong>
+                            </li>        
+                            <li>
+                                <strong>SQL</strong>
+                                Server
+                            </li>
+                            <li>
+                                <strong>Kali </strong>
+                                Linux
+                            </li>        
+                            <li>
+                                <strong>CISCO Packet Tracer</strong>
+                            </li>        
+                        </ul>
+                    <br><h3>Networking Skills</h3>
+                        <ul>
+                            <li><strong>IPv4 / IPv6</strong> addressing</li>
+                            <li><strong>DHCP</strong> protocol</li>
+                            <li><strong>OSI</strong> model</li>
+                            <li><strong>RIP and OSPF</strong> routing protocols</li>
+                            <li><strong>Static</strong> Routing</li>
+                            <li><strong>LAN, WAN, VLAN</strong></li>
+                            <li><strong>Subnet, VLSM</strong></li>
+                            <li>Encryption and basic <strong>security</strong></li>
+                            <li><strong>STP</strong></li>
+                        </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Languages</h3>
+                        <div class="contenedor-leng">
+                            <div class="lenguajes">
+                                <i class="fa-sharp fa-solid fa-terminal"></i>
+                                <span>C/C++/C#</span>
+                            </div>
+                            <div class="lenguajes">
+                                <i class="fa-brands fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="lenguajes">
+                                <i class="fa-brands fa-square-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="lenguajes">
+                                <i class="fa-solid fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="lenguajes">
+                                <i class="fa-brands fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                        </div>
+
+                    <h3><br>Others</h3>
+                        <div class="contenedor-leng">
+                            <div class="lenguajes">
+                                <i class="fa-solid fa-network-wired"></i>
+                                <span>Networks</span>
+                            </div>
+                            <div class="lenguajes">
+                                <i class="fa-brands fa-linux"></i>
+                                <span>Linux</span>
+                            </div>
+                            <div class="lenguajes">
+                                <i class="fa-brands fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="lenguajes">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--  PORTFOLIO  -->
+    <section id="portfolio" class="portfolio">
+        <h2><br>PORTFOLIO</h2>
+        <div class="contenedor-portfolio">
+            <div class="card">
+                <img src="img/ipv4_subredes_1.png">
+                <a href="img/ipv4_subredes_1.png" target="_blank">IPv4 routing with subnets</a>
+            </div>
+            <div class="card">
+                <img src="img/vlan_1.png">
+                <a href="img/vlan_1.png" target="_blank">VLAN with IPv4</a>
+            </div>
+            <div class="card">
+                <img src="img/VLAN_RIP_1.png">
+                <a href="img/VLAN_RIP_1.png" target="_blank">RIP routing with VLAN</a>
+            </div>
+            <div class="card">
+                <img src="img/VLSM_OSPF_1.png">
+                <a href="img/VLSM_OSPF_1.png" target="_blank">OSPF routing with VLSM</a>
+                </a>
+            </div>
+            <div class="card">
+                <img src="img/ipv6_1.png">
+                <a href="img/ipv6_1.png" target="_blank">RIP routing with IPv6</a>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!--  CONTACTO  -->
+    <section id="contact" class="contacto">
+        <h2><br>CONTACT</h2><br><br>
+        <div class="contenedor-contacto">
+            <div class="fila">
+                <div class="col">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li>
+                            <br><i class="fa-solid fa-envelope"></i>&emsp;Email:&emsp;<strong>adripms.08@gmail.com</strong>
+                        </li>
+                        <li>
+                            <br><i class="fa-solid fa-phone"></i>&emsp;Phone:&emsp;<strong>(+52) 55 7864 6713</strong>
+                        </li>
+                        <li>
+                            <br><i class="fa-brands fa-linkedin-in"></i>&emsp;LinkedIn:&emsp;<a href="https://www.linkedin.com/in/adripms/" target="_blank"><strong>adripms/</strong></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Do you prefer send a direct email?</h3>
+                    <form id="form" class="form" action="">
+                        <label for="nombre">Name: <span><strong>*</strong></span></label>
+                        <input name="name" required type="text" id="name" placeholder="Full name">
+                        <label for="correo">Email: <span><strong>*</strong></span></label>
+                        <input name="email" required type="text" id="email" placeholder="email@example.com">
+                        <label for="telefono">Phone: <span><strong>*</strong></span></label>
+                        <input name="phone" required type="text" id="phone" placeholder="+52 55 1234 5678">
+                        <label for="mensaje">Message: <span><strong>*</strong></span></label>
+                        <textarea name="message" required type="text" rows="6" id="message" placeholder="How can I help you? :D"></textarea>
+                        <a href="mailto:adripms.08@gmail.com" id="auto_mail">
+                            <button type="submit">Send <i class="fa-solid fa-paper-plane"></i>
+                                <span class="overlay"></span>                        
+                            </button>                
+                        </a>
+                    </form>
+                    <script>
+                        const $form = document.querySelector('#form')
+                        const $buttonMailto = document.querySelector('#auto_mail')
+        
+                        $form.addEventListener('submit', handleSubmit)
+                        
+                        function handleSubmit(event){
+                            event.preventDefault()
+                            const form = new FormData(this)
+                            $buttonMailto.setAttribute('href', `mailto:adripms.08@gmail.com?subject=¡Hola! Soy ${form.get('name')} y quiero contactar contigo.&body=${form.get('message')}%0A%0ATe dejo mis datos de contacto: %0ANombre: ${form.get('name')}%0ACorreo: ${form.get('email')}%0ATeléfono: ${form.get('phone')}`)
+                            $buttonMailto.click()
+                        }
+                    </script>
+        
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!--  FOOTER  -->
+    <footer>
+        <div class="redes">
+            <!--  Redes sociales  -->
+            <a href="https://www.linkedin.com/in/adripms/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/adrims08" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

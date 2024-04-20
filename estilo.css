@@ -1,0 +1,598 @@
+/* Importa las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* Permite deslizar la página con los links del menú */
+    scroll-behavior: smooth;
+    background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,1)),
+    /*Foto de fondo*/    
+    url(img/back.jpg);  
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+/* MENÚ */
+.contenedor-header{
+    background-color: #1e2326;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.contenedor-header header .logo a{
+    font-family: 'IBM Plex Mono';
+    font-size: 36px;
+    color: #1cb698;
+    text-decoration: none;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #1cb698;
+}
+
+.nav-responsive{
+    background-color: #1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SOBRE MI */
+.about_me{
+    background: linear-gradient(to top, rgba(30,35,38,.5), rgba(30,35,38,1)),
+    /*Foto de fondo*/    
+    url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about_me h2{
+    font-size: 48px;
+    font-family: 'IBM Plex Mono';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about_me p{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.about_me .tabla_p .fila{
+    display: flex;
+}
+
+.about_me .tabla_p .fila .col .contenedor-banner{
+    padding: 10px;
+    background-color: rgba(30,35,38,.7);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.about_me .tabla_p .fila .col .contenedor-banner img{
+    margin-top: 40px;
+    border: 10px solid #1cb698;
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.about_me .tabla_p .fila .col .contenedor-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'IBM Plex Mono';
+}
+
+.about_me .tabla_p .fila .col .contenedor-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.about_me .tabla_p .fila .col .contenedor-banner .redes a{
+    background-color:#252A2E;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.about_me .tabla_p .fila .col .contenedor-banner .redes a:hover{
+    background-color: #1cb698;
+}
+
+.about_me .tabla_p .fila .col strong{
+    display: inline-block;
+    color: #1cb698;
+}
+
+.about_me .tabla_p .fila .col .personal_information{
+    padding: 20px;
+    background-color: rgba(30,35,38,.7);
+    max-width: 98%;
+    margin: auto;
+    margin-right: 30px;
+    border-radius: 40px;
+    margin-bottom: 40px;
+}
+
+.about_me .fila .col{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* EDUCACIÓN */
+.training{
+    background-color: rgba(30,35,38,.7);
+    color: #fff;
+    padding: 50px 20px;
+    margin-top: 50px;
+}
+
+.training .contenedor-info{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.training h2{
+    font-size: 48px;
+    font-family: 'IBM Plex Mono';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.training ul{
+    list-style: none;
+}
+
+.training ul li{
+    margin: 12px 0;
+}
+
+.training ul li strong{
+    display: inline-block;
+    color: #1cb698;
+}
+
+.training button{
+    cursor: pointer;
+    background-color:#252A2E;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.training a{
+    text-decoration: none;
+}
+
+.training button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.training button:hover .overlay{
+    width:100%;
+}
+
+.training .certificados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.training .certificados .card{
+    background-color:#252A2E;
+    width: 300px;
+    height: 240px;
+    border-radius: 9px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.training .certificados .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.training .certificados img{
+    width: 290px;
+    height: 170px;
+}
+
+.training .certificados .card a{
+    text-decoration: none;
+    color:#fff;
+    transition: 0.3s;
+}
+
+.training .certificados .card a:hover{
+    color:#1cb698;
+}
+
+/* CONOCIMIENTOS */
+.conocimientos{
+    background-color: rgba(30,35,38,0.7);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.conocimientos .contenedor-habilidades{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.conocimientos h2{
+    font-size: 48px;
+    font-family: 'IBM Plex Mono';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.conocimientos .fila{
+    display: flex;
+}
+
+.conocimientos .fila .col{
+    width: 50%;
+}
+
+.conocimientos .fila .col h3{
+    font-size: 28px;
+    font-family: 'Lato';
+    margin-bottom: 25px;
+}
+.conocimientos .fila .col ul{
+    list-style: none;
+}
+
+.conocimientos .fila .col ul li{
+    margin: 12px 0;
+}
+
+.conocimientos .fila .col ul li strong{
+    color: #1cb698;
+    width: 130px;
+}
+
+.conocimientos .fila .col .contenedor-leng{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conocimientos .fila .col .contenedor-leng .lenguajes{
+    width: 100px;
+    height: 100px;
+    background-color:#252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.conocimientos .fila .col .contenedor-leng .lenguajes:hover{
+    background-color: #1cb698;
+}
+
+.conocimientos .fila .col .contenedor-leng .lenguajes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* PORTFOLIO */
+.portfolio{
+    background-color: rgba(30,35,38,.7);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.portfolio .contenedor-portfolio{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'IBM Plex Mono';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portfolio .card{
+    width: 300px;
+    height: 220px;
+    background-color:#252A2E;
+    border-radius: 9px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.portfolio .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio img{
+    width: 290px;
+    height: 170px;
+}
+
+.portfolio .card a{
+    text-decoration: none;
+    color:#fff;
+    transition: 0.3s;
+}
+
+.portfolio .card a:hover{
+    color:#1cb698;
+}
+
+/* CONTACTO */
+.contacto{
+    background-color: rgba(30,35,38,.7);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.contacto .contenedor-contacto{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 48px;
+    font-family: 'IBM Plex Mono';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto a{
+    text-decoration: none;
+}
+
+.contacto .fila{
+    display: flex;
+}
+
+.contacto .fila .col{
+    width: 50%;
+}
+
+.contacto .fila .col h3{
+    font-size: 28px;
+    font-family: 'Lato';
+    margin-bottom: 25px;
+}
+
+.contacto .fila .col ul{
+    list-style: none;
+}
+
+.contacto .fila .col ul li{
+    margin: 12px 0;
+}
+
+.contacto .fila .col ul li strong{
+    color: #1cb698;
+    width: 130px;
+}
+
+.contacto .fila .col .contenedor-contacto{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacto .fila .col form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.contacto .fila .col form label{
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.contacto .fila .col form label span{
+    color:#1cb698   
+}
+
+.contacto .fila .col form input, .contacto .fila .col form textarea{
+    display: block;
+    width: 150%;
+    padding: 12px;
+    border: none;
+    background-color: #252A2E;
+    color:#fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto .fila .col form button{
+    cursor: pointer;
+    background-color:#252A2E;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    margin-left: 60%;
+}
+
+.contacto .fila .col form button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto .fila .col form button:hover .overlay{
+    width:100%;
+}
+
+
+
+/******************************************/
+
+footer{
+    background-color: rgba(30,35,38,.5);
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    background-color:#252A2E;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .redes a:hover{
+    background-color: #1cb698;
+}
+/* RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+
+    .nav-responsive{
+        display: block;
+    }
+
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .training, .conocimientos .fila, .about_me .tabla_p .fila, .contacto .fila{
+        display: block;
+    }
+
+    .conocimientos .fila .col, .about_me .tabla_p .fila .col, .contacto .fila .col{
+        width: fit-content;
+    }
+
+    .about_me .tabla_p .fila .col .contenedor-banner{
+        margin: auto;
+        margin-top: 180%;
+    }
+
+    .training{
+        margin-top: 150%;
+    }
+}
+
+
